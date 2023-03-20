@@ -1,0 +1,12 @@
+<mjml>
+    <mj-body>
+        <mj-section background-color="yellow">
+            <mj-column width="600px">
+                <mj-text>This is the title</mj-text>
+            </mj-column>
+            <mj-column width="600px">
+                <mj-text>This is the title</mj-text>
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>
