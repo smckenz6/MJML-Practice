@@ -1,11 +1,65 @@
 <mjml>
-    <mj-body>
-        <mj-section background-color="yellow">
-            <mj-column width="600px">
-                <mj-text>This is the title</mj-text>
+    <mj-head>
+        <mj-style>
+            * {
+            box-sizing: border-box;
+            }
+        </mj-style>
+        <mj-style inline="inline">
+            .header {
+                background-color: #004c3f;
+            }
+
+            .section-padding {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            .link-color {
+                color: #004c3f;
+                text-decoration: none;
+            }
+        </mj-style>
+    </mj-head>
+    <mj-body background-color="#f2f2f2">
+        <mj-raw><!-- Header --></mj-raw>
+        <mj-section css-class="header section-padding">
+            <mj-column>
+                <mj-image width="121px" align="left" src="#" alt="shopify-logo" href="https://www.shopify.com/" />
             </mj-column>
-            <mj-column width="600px">
-                <mj-text>This is the title</mj-text>
+        </mj-section>
+        <mj-raw><!-- Top Section --></mj-raw>
+        <mj-section>
+            <mj-column padding="20px 0 30px 0">
+                <mj-text css-class="header-title" font-size="58px" color="#004c3f" font-weight="bold">
+                    What's new
+                </mj-text>
+                <mj-text css-class="header-title" font-size="18px" color="#004c3f" font-weight="normal">
+                    July 18, 2030
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <mj-raw><!-- 3 Line Divider --></mj-raw>
+        <mj-section>
+            <mj-column>
+                <mj-image src="#" alt="3-lines" padding="0" />
+            </mj-column>
+        </mj-section>
+        <mj-raw><!-- 2 Column Image w/ Text --></mj-raw>
+        <mj-section>
+            <mj-column>
+                <mj-image href="https://www.shopify.com/blog" src="#" padding-bottom="20px" alt="image-jpg" />
+            </mj-column>
+            <mj-column>
+                <mj-text color="#004c3f" font-size="24px" font-weight="bold" padding-bottom="20px">
+                    <a href="https://www.shopify.com/blog" class="link-color">Find more ways to sell with pre-orders</a>
+                </mj-text>
+                <mj-text color="#004c3f" font-size="16px" font-weight="normal" line-height="20px" padding-bottom="20px">
+                    We've gone and made selling even easier, with pre-orders. Give your customers the ability to pay now, pay a deposit, or pay later, and in the process, increase your sales, forecast demand, and create buzz for your products.
+                </mj-text>
+                <mj-text color="#004c3f" font-size="14px" font-weight="bold" line-height="20px" padding-bottom="20px">
+                    Learn more
+                </mj-text>
             </mj-column>
         </mj-section>
     </mj-body>
